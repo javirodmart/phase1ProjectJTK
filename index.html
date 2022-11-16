@@ -1,7 +1,27 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/masiku');
+        </style>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/nevermine');
+        </style>
+        <link href="https://fonts.cdnfonts.com/css/moody-adolescent" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/norda" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/dish-out" rel="stylesheet">
+
+        
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <script defer src="./token.js"></script>
         <script defer src="./javi.js"></script>
@@ -10,52 +30,53 @@
         
     </head>
     <body class="background">
+        <button id="toggel">☼</button>
         <div>
             <h1 style="color: white;" class="title">#MOOD.</h1>
-        <p style="color: white;" class="intro">How are you feeling?<br>Choose a playlist...</p>
+        <p style="color: white;" class="intro">How are you feeling?<br>Choose a playlist...or search one.</p>
         </div>
         
     
     <div class="tile container">
         <div class="cube1">
-            Angry
-            <p><button id="15Glcc8LdAloMFFfbODCl7" >Angrfry rock</button></p>
-            <p><button id="0jp0hwcRfVCDI3E3oCeft4" class="highlight">Load Angry Rap</button></p>
-            <p><button id="3L6hwXk9fAULvrEcG91bOn"class="highlight">Emo</button></p>
+            <h2>Angry</h2>
+            <p class="p"><button id="15Glcc8LdAloMFFfbODCl7">Death Metal</button></p>
+            <p class="p"><button id="0jp0hwcRfVCDI3E3oCeft4">Load Angry Rap</button></p>
+            <p class="p"><button id="3L6hwXk9fAULvrEcG91bOn">Emo</button></p>
         </div>
         <div class="cube2">
-            Sad
-            <p><button id="1LBx0NqmEqB6Lm3w8CXZ51">Sad in spanish</button></p>
-            <p><button id="04L00xiyRKFxlCs7A5FWZy">Sad Taylor Swift</button></p>
-            <p><button id="37i9dQZF1DWSqBruwoIXkA">Sad Hour</button></p>
+            <h2>S a D</h2>
+            <p class="p"><button id="1LBx0NqmEqB6Lm3w8CXZ51">Sad in spanish</button></p>
+            <p class="p"><button id="04L00xiyRKFxlCs7A5FWZy">Looking Out The Car Window</button></p>
+            <p class="p"><button id="37i9dQZF1DWSqBruwoIXkA">Its Okay To Cry (Sometimes)</button></p>
         </div>
         <div class="cube3" type="button">
-            Energetic
-            <p><button id="37i9dQZF1DWZixSclZdoFE"></button></p>
-            <p><button id="0jp0hwcRfVCDI3E3oCeft4">Load Angry Rap </button></p>
-            <p><button>Sad in spanish</button></p>
+            <h2>Energetic</h2>
+            <p class="p"><button id="37i9dQZF1DWZixSclZdoFE">Jersey Remix</button></p>
+            <p class="p"><button id="0jp0hwcRfVCDI3E3oCeft4">Dance Party</button></p>
+            <p class="p"><button>Electronic</button></p>
         </div>
         <div id="panel" >
             <!-- put embed player in -->
             <iframe  id="side-bar" class="panel" allow="encrypted-media" src="" style="border:0px #ffffff none;"  name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="400px"  allowfullscreen=""></iframe><div style="position: absolute;width: 85%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.5;font-size: 0px;background: #fff;"><a href="https://spotembed.com/" rel="nofollow">Spotify player embed</a> </small></div> <script type="text/javascript" src="https://instaembedcode.com/in.js"></script><style>.box1{position:relative;text-align:right;height:145px;width:421px;} #newest img{max-width:none!important;background:none!important}</style>
         </div>
         <div class="cube4" type="button">
-            Nostalgic
-            <p><button>Sad in spanish</button></p>
-            <p><button>Sad in spanish</button></p>
-            <p><button>Sad in spanish</button></p>
+            <h2>Nostalgic</h2>
+            <p class="p"><button> Oldies Reggae</button></p>
+            <p class="p"><button> High School Prom</button></p>
+            <p class="p"><button> Ringtones</button></p>
         </div>
         <div class="cube5" type="button">
-            Happy
-            <p><button id="5S8SJdl1BDc0ugpkEvFsIL">The Longest Playlist</button></p>
-            <p><button id="7287dP1VoDxo5xeikLZabE">Classic Happiness</button></p>
-            <p><button>Sad in spanish</button></p>
+            <h2>Happy</h2>
+            <p class="p"><button id="5S8SJdl1BDc0ugpkEvFsIL">The Longest Playlist</button></p>
+            <p class="p"><button id="7287dP1VoDxo5xeikLZabE">Serotonin</button></p>
+            <p class="p"><button>Divorced But Rich</button></p>
         </div>
         <div class="cube6" type="button">
-            Sleepy
-            <p class="highlight"><button>Sad in spanish</button></p>
-            <p class="highlight"><button>Sad in spanish</button></p>
-            <p class="highlight"><button>Sad in spanish</button></p>
+            <h2>Sleepy</h2>
+            <p class="p"><button>Ambient/Experimental</button></p>
+            <p class="p"><button>Coding Session</button></p>
+            <p class="p"><button>Chill Beats To Study To</button></p>
         </div>
         
     </div>              
@@ -64,6 +85,6 @@
             <input id="clear-btn" type="button" value="clear">
             <input type="submit" value="search">
         </form>
-    <div><div id="search-results"></div></div>
+    <div id="search-results"></div>
 </body>
 </html>

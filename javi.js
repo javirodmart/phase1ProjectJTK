@@ -33,7 +33,12 @@ function sad(data){
 }
  
 
-
+function lightDark(){
+    const button = querySelector(`toggel`)
+    button.addEventListener(`toggel`, (e) => {
+        button.textContack =`hey`
+    })
+}
 
 
 

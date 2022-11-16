@@ -1,4 +1,4 @@
-const token = "BQDcSVbQRzO7e6FIruuZXh0as7kbXyKr9_6v5b-dQJBnKWjfXtpoRR_bhxbp4Ryf0HMQSnQWZeBpUsN97vjNVdZ1f-ZISdOL8YqihcknpaHHMdBM0nc7TpQ3b94Kn0eMrhbe5a23zc9lBf-rpuk9o_p9W5B7JgVbf45dHJb1qLQj6nw"
+const token = "BQCB7lzaKKdeuFxdNBddTSKIdoSnBdQpROpMjpeK-r8KqcqlQozHK-FCboXXUxj6RaJhEUCOJn2obFGYZq-uSxA5RbV8lhlleLrsbQe4Bzwdk2TJjrnW3GdoQ5cGEck4vKq7EO3FJ8TUvOcC9KNtMwUXEvD1i4XP2O_LPjkxMyWt"
 
 const searchForm = document.querySelector('#search-bar')
 let userSearchInput = document.querySelector('#submit')
@@ -20,9 +20,7 @@ clearBtn.addEventListener('click', (e)=>{
 })
 
 // const tileCubes = document.querySelectorAll(".highlight")
-// tileCubes.addEventListener("mouseover", (event) => {
-    
-//     event.target.style.color = "white";
+
     
 //     setTimeout(() => {
 //         event.target.style.color = "";
@@ -35,7 +33,7 @@ clearBtn.addEventListener('click', (e)=>{
  
 
 function getDataFromSpotify(id){
-fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=10&offset=0`, {
+fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=12&offset=0`, {
     method:'GET',
     headers: {
         "Accept" : "application/json",
@@ -53,18 +51,23 @@ fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=10&offse
 }
 let container = document.querySelector('#search-results')
 function renderSearchResults(allPlaylist){
-    allPlaylist.forEach(playlist =>{    
-    let p = document.createElement('p')
+    allPlaylist.forEach(playlist =>{  
+    const div = document.createElement(`div`)
+    container.append(div)    
+    let p = document.createElement('h2')
     p.className = "search-results-text"
-    container.append(p)
+    div.append(p)
+    div.setAttribute(`class`,`result`)
     p.textContent = playlist.name
     const img =document.createElement('img')
     img.className = "search-results-img"
-    p.append(img)
+    div.append(img)
     img.src = playlist.images[0].url
     let span = document.createElement('span')
-    img.append(span)
+    span.className = "description"
+    // img.append(span)
     span.textContent = playlist.description
+    div.append(span)
     var id= playlist.id
     img.addEventListener('click', (e) => {
         setSideBar(id)
@@ -72,6 +75,16 @@ function renderSearchResults(allPlaylist){
 
 })
 }   
+
+const cubeTitles = document.querySelectorAll('.p')
+cubeTitles.forEach(element => {
+    element.addEventListener("mouseover", (e) => {
+    e.target.style.color = "white"});
+    element.addEventListener('mouseout', (e) => {
+        e.target.style.color = "black"
+    })
+});
+
 
 // image of playlist = data.playlists.items[0].images[0].url
 // name of playlist =data.playlists.items[0].name
