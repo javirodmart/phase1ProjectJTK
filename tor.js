@@ -8,9 +8,8 @@ searchForm.addEventListener('submit', (e) => {
     var id = userSearchInput.value
     getDataFromSpotify(id);
     renderSearchResults();
-    // setTimeout(()=>{
-    //     userSearchInput.value = ''
-    //     }, 3000)    
+    searchForm.reset(e);
+
     
 })
 
