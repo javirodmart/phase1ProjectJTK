@@ -146,10 +146,34 @@ button {
     height: 600px;
     margin-left: 58px;
     margin-top: 22px;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(4, 2fr);
+    
+    /* gap: 1rem; */
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
    
+}
+
+.search-results-img {
+    object-fit:contain;
+    width:200px;
+    height:300px;
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px; */
+}
+
+.search-results-text {
+    size: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px; */
 }
