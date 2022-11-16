@@ -60,11 +60,15 @@ function renderSearchResults(allPlaylist){
     p.textContent = playlist.name
     const img =document.createElement('img')
     img.className = "search-results-img"
-    container.append(img)
+    p.append(img)
     img.src = playlist.images[0].url
     let span = document.createElement('span')
-    container.append(span)
+    img.append(span)
     span.textContent = playlist.description
+    var id= playlist.id
+    img.addEventListener('click', (e) => {
+        setSideBar(id)
+    })
 
 })
 }   
