@@ -1,4 +1,4 @@
-// const token = "BQDBGZsfd8zpeuqFFVnBGsb5ztS9J42zvdZOX_adPwZL_7fyv9mVIRLLn_6ACnZzw5CaIwzZCO3asrLXzR6zuhP0ecaKgOCanDJ0-xwDMyLWE9re_FOyBKxfmNv2HB3OLc7tE-Ie5Jbm8WwrMcvee9gygB4inhgbU1BwPhRoVrhU"
+const token = "BQB51FFPNmbcZd9KFg12fXqIqnQeQf-fFIg9WsKDw8EbBt4IBbM1GLnODYJRFlsccHOA0nv58vYgky6PVS9Wmog2Q_9eKEwvFomURrDMvUBqoA4z_veqAo9XATuVxp6KUXNkky1tFSbyM--DUHG3rCQVs-FSec40Ek-t0g_GVSr4"
 
 const searchForm = document.querySelector('#search-bar')
 let userSearchInput = document.querySelector('#submit')
@@ -7,22 +7,30 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     var id = userSearchInput.value
     getDataFromSpotify(id);
-    renderSearchResults();
-    // setTimeout(()=>{
-        //     userSearchInput.value = ''
-        //     }, 3000)    
-    })
+    renderSearchResults(); 
 
-    searchForm.addEventListener(`click`,(e) => {
-        e.preventDefault
-        
-        userSearchInput.reset()
+    
+})
 
-    })
+let clearBtn = document.querySelector('#clear-btn')
+clearBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    userSearchInput.value = "";
+    container.innerHTML= "";
+})
+
+// const tileCubes = document.querySelectorAll(".highlight")
+// tileCubes.addEventListener("mouseover", (event) => {
     
+//     event.target.style.color = "white";
     
-    
-    
+//     setTimeout(() => {
+//         event.target.style.color = "";
+//       }, 500);
+//     }, false)
+
+
+
 
  
 
@@ -43,22 +51,22 @@ fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=10&offse
 
     })
 }
-
+let container = document.querySelector('#search-results')
 function renderSearchResults(allPlaylist){
-    allPlaylist.forEach(playlist =>{
-        let container = document.querySelector('#search-results')
-        let p = document.createElement('p')
-        container.append(p)
-        p.textContent = playlist.name
-        const img =document.createElement('img')
-        container.append(img)
-        img.src = playlist.images[0].url
-        let span = document.createElement('span')
-        container.append(span)
-        span.textContent = playlist.description
-        
-    })
-    
+    allPlaylist.forEach(playlist =>{    
+    let p = document.createElement('p')
+    p.className = "search-results-text"
+    container.append(p)
+    p.textContent = playlist.name
+    const img =document.createElement('img')
+    img.className = "search-results-img"
+    container.append(img)
+    img.src = playlist.images[0].url
+    let span = document.createElement('span')
+    container.append(span)
+    span.textContent = playlist.description
+
+})
 }   
 
 // image of playlist = data.playlists.items[0].images[0].url
