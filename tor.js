@@ -9,12 +9,20 @@ searchForm.addEventListener('submit', (e) => {
     getDataFromSpotify(id);
     renderSearchResults();
     // setTimeout(()=>{
-    //     userSearchInput.value = ''
-    //     }, 3000)    
+        //     userSearchInput.value = ''
+        //     }, 3000)    
+    })
+
+    searchForm.addEventListener(`click`,(e) => {
+        e.preventDefault
+        
+        userSearchInput.reset()
+
+    })
     
-})
-
-
+    
+    
+    
 
  
 
@@ -38,18 +46,19 @@ fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=10&offse
 
 function renderSearchResults(allPlaylist){
     allPlaylist.forEach(playlist =>{
-    let container = document.querySelector('#search-results')
-    let p = document.createElement('p')
-    container.append(p)
-    p.textContent = playlist.name
-    const img =document.createElement('img')
-    container.append(img)
-    img.src = playlist.images[0].url
-    let span = document.createElement('span')
-    container.append(span)
-    span.textContent = playlist.description
-
-})
+        let container = document.querySelector('#search-results')
+        let p = document.createElement('p')
+        container.append(p)
+        p.textContent = playlist.name
+        const img =document.createElement('img')
+        container.append(img)
+        img.src = playlist.images[0].url
+        let span = document.createElement('span')
+        container.append(span)
+        span.textContent = playlist.description
+        
+    })
+    
 }   
 
 // image of playlist = data.playlists.items[0].images[0].url
