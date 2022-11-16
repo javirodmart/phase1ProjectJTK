@@ -1,4 +1,4 @@
-const token = "BQDBGZsfd8zpeuqFFVnBGsb5ztS9J42zvdZOX_adPwZL_7fyv9mVIRLLn_6ACnZzw5CaIwzZCO3asrLXzR6zuhP0ecaKgOCanDJ0-xwDMyLWE9re_FOyBKxfmNv2HB3OLc7tE-Ie5Jbm8WwrMcvee9gygB4inhgbU1BwPhRoVrhU"
+// const token = "BQDBGZsfd8zpeuqFFVnBGsb5ztS9J42zvdZOX_adPwZL_7fyv9mVIRLLn_6ACnZzw5CaIwzZCO3asrLXzR6zuhP0ecaKgOCanDJ0-xwDMyLWE9re_FOyBKxfmNv2HB3OLc7tE-Ie5Jbm8WwrMcvee9gygB4inhgbU1BwPhRoVrhU"
 
 const searchForm = document.querySelector('#search-bar')
 let userSearchInput = document.querySelector('#submit')
