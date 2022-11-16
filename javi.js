@@ -24,9 +24,10 @@ function setSideBar(id){
 function sad(data){
     wrapper.forEach(btn => {
         btn.addEventListener(`click`, (e) => {
-            var id = e.target.id
-            setSideBar(id)
-            fetchSpotify(id)
+            console.log(e.target.id)
+            var id2 = e.target.id
+            setSideBar(id2)
+            fetchSpotify(id2)
         })
     })
 }
@@ -40,6 +41,7 @@ function sad(data){
 
 document.addEventListener(`DOMContentLoaded`, (e) => {
    sad()
+  console.log(`hey`)
   
   
 })
