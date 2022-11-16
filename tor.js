@@ -1,4 +1,4 @@
-const token = "BQA-8A9OefqL26IZ3itzew1JO3lnqUhlpToxUFck93j6EFWYWQM_DIqDbT065VfUEH3VbC--IEk0FV8eTknEJUBr9i0HNs50XHgTK37TIAIQ04k5YU51ZVvwMZeV-GsCiVM-i9jOs4H8_OXWKd5dZPLMk0rby5UPv7Uc96aNVtm9"
+const token = "BQB51FFPNmbcZd9KFg12fXqIqnQeQf-fFIg9WsKDw8EbBt4IBbM1GLnODYJRFlsccHOA0nv58vYgky6PVS9Wmog2Q_9eKEwvFomURrDMvUBqoA4z_veqAo9XATuVxp6KUXNkky1tFSbyM--DUHG3rCQVs-FSec40Ek-t0g_GVSr4"
 
 const searchForm = document.querySelector('#search-bar')
 let userSearchInput = document.querySelector('#submit')
@@ -19,15 +19,15 @@ clearBtn.addEventListener('click', (e)=>{
     container.innerHTML= "";
 })
 
-const tileCubes = document.querySelectorAll(".highlight")
-tileCubes.addEventListener("mouseover", (event) => {
+// const tileCubes = document.querySelectorAll(".highlight")
+// tileCubes.addEventListener("mouseover", (event) => {
     
-    event.target.style.color = "white";
+//     event.target.style.color = "white";
     
-    setTimeout(() => {
-        event.target.style.color = "";
-      }, 500);
-    }, false)
+//     setTimeout(() => {
+//         event.target.style.color = "";
+//       }, 500);
+//     }, false)
 
 
 
@@ -55,14 +55,20 @@ let container = document.querySelector('#search-results')
 function renderSearchResults(allPlaylist){
     allPlaylist.forEach(playlist =>{    
     let p = document.createElement('p')
+    p.className = "search-results-text"
     container.append(p)
     p.textContent = playlist.name
     const img =document.createElement('img')
-    container.append(img)
+    img.className = "search-results-img"
+    p.append(img)
     img.src = playlist.images[0].url
     let span = document.createElement('span')
-    container.append(span)
+    img.append(span)
     span.textContent = playlist.description
+    var id= playlist.id
+    img.addEventListener('click', (e) => {
+        setSideBar(id)
+    })
 
 })
 }   
