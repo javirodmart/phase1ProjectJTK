@@ -41,13 +41,13 @@
 }
 
 .cube1 {
- height: 200px;
- width: 220px;
-background-color: #C12C2C;
-text-align: center;
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Masiku', sans-serif;
+    height: 200px;
+    width: 220px;
+    background-color: #C12C2C;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Masiku', sans-serif;
 
 
 }
@@ -58,43 +58,43 @@ font-family: 'Masiku', sans-serif;
 }
 
 .cube2{
-height: 200px;
-width: 220px;
-background-color: #EFF23B;
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Nevermine', sans-serif;
+    height: 200px;
+    width: 220px;
+    background-color: #EFF23B;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Nevermine', sans-serif;
 
 
 }
 .cube3{
-height: 200px;
-width: 220px;
-background-color: #FFAA2C;
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Norda', sans-serif;
+    height: 200px;
+    width: 220px;
+    background-color: #FFAA2C;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Norda', sans-serif;
 
     
 }
 .cube4{
-height: 200px;
-width: 220px;
-background-color: #6EBC52;
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Dish Out', sans-serif;
+    height: 200px;
+    width: 220px;
+    background-color: #6EBC52;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Dish Out', sans-serif;
 
     
 }
 .cube5{
-height: 200px;
-width: 220px;
-background-color: #4FB5EE;
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Rubik Glitch', cursive;
-font-weight: lighter        
+    height: 200px;
+    width: 220px;
+    background-color: #4FB5EE;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: lighter        
 }
 .cube5 > h2{
     font-family: 'Rubik Glitch', cursive;
@@ -102,21 +102,19 @@ font-weight: lighter
 }
 
 .cube6{
-height: 200px;
-width: 220px;
-background-color: #9737C3;
-/* margin: auto; */
-/* margin-top: 50px; */
-box-shadow: 0px 0px 15px black;
-border-radius: 10px;
-font-family: 'Moody Adolescent', sans-serif;
+    height: 200px;
+    width: 220px;
+    background-color: #9737C3;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-family: 'Moody Adolescent', sans-serif;
 }  
 
-.cube1:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube4:hover, .cube5:hover, .cube6:hover, .cube7:hover, .cube8:hover{
-transform: scale(1.2);
-transition-duration: 1s; 
-transition: 1s ease-in 1s;
-transition: padding .5s
+.cube1:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube4:hover, .cube5:hover, .cube6:hover, {
+    transform: scale(1.2);
+    transition-duration: 1s; 
+    transition: 1s ease-in 1s;
+    transition: padding .5s
 } 
 
 #panel {
@@ -144,10 +142,7 @@ button {
     margin-top: 22px;
     display: grid;
     padding: 0;
-    grid-template-columns: repeat(4, 2fr);
-    
-    
-    /* gap: 1rem; */
+    grid-template-columns: repeat(4, 2fr);  
 }
 
 .container {
@@ -161,21 +156,15 @@ button {
     object-fit:contain;
     width:200px;
     height:280px;
-    /* padding-top: 0; */
     padding-bottom: 10px;
     margin-top: -50px;
     margin-bottom: -10px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px; */
+    
 }
 
 .search-results-text {
     size: 20px;
     text-align: center;
-   /* margin-top: -50px;
-   margin-bottom: -50px; */
    font-weight: bolder;
 } 
 .description {
@@ -185,64 +174,59 @@ button {
 
 .result{
     text-align: center;
-    /* padding: 20px;
-    padding-top: 0px; */
     position: relative;
-    /* margin-top: -20px;
-    margin-bottom: -50px; */
 }
-    img{
-        margin: auto;
-        /* padding-bottom: 10px; */
-    }
+img{
+    margin: auto;
+}
 
-    #toggel{
-        color: white;
-        font-size: 50px;
-    }
+#toggel{
+    color: white;
+    font-size: 50px;
+}
+
+
+
+
+.button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10%;
+    will-change: transform;
     
-    
-    
-    /* CSS */
-    .button-27 {
-      appearance: none;
-      background-color: #000000;
-      border: 2px solid #1A1A1A;
-      border-radius: 15px;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      cursor: pointer;
-      display: inline-block;
-      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-      font-size: 16px;
-      font-weight: 600;
-      line-height: normal;
-      margin: 0;
-      min-height: 60px;
-      min-width: 0;
-      outline: none;
-      padding: 16px 24px;
-      text-align: center;
-      text-decoration: none;
-      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      width: 10%;
-      will-change: transform;
-      
-    }
-    
-    .button-27:disabled {
-      pointer-events: none;
-    }
-    
-    .button-27:hover {
-      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-      transform: translateY(-2px);
-    }
-    
-    .button-27:active {
-      box-shadow: none;
-      transform: translateY(0);
-    }
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
