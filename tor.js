@@ -1,4 +1,4 @@
-const token = "BQCB7lzaKKdeuFxdNBddTSKIdoSnBdQpROpMjpeK-r8KqcqlQozHK-FCboXXUxj6RaJhEUCOJn2obFGYZq-uSxA5RbV8lhlleLrsbQe4Bzwdk2TJjrnW3GdoQ5cGEck4vKq7EO3FJ8TUvOcC9KNtMwUXEvD1i4XP2O_LPjkxMyWt"
+// const token ="BQBxTMx9E2f9-g_866TC9ap7SHlel830WUHcqTulePOgAY5xV7rj8Ur13-B8G1NX9SmwzeH3zbMiUEz3ZtcdVZt2FCMmaqMqIaqnDoy-PN5c2Sve-bqa7TzguHYo33yDH2usT65nkwwrUiWF64KogG6qpEU_gGQUzYlZERgKnPYX"
 
 const searchForm = document.querySelector('#search-bar')
 let userSearchInput = document.querySelector('#submit')
@@ -7,9 +7,7 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     var id = userSearchInput.value
     getDataFromSpotify(id);
-    renderSearchResults(); 
-
-    
+    renderSearchResults();     
 })
 
 let clearBtn = document.querySelector('#clear-btn')
@@ -18,19 +16,6 @@ clearBtn.addEventListener('click', (e)=>{
     userSearchInput.value = "";
     container.innerHTML= "";
 })
-
-// const tileCubes = document.querySelectorAll(".highlight")
-
-    
-//     setTimeout(() => {
-//         event.target.style.color = "";
-//       }, 500);
-//     }, false)
-
-
-
-
- 
 
 function getDataFromSpotify(id){
 fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=12&offset=0`, {
@@ -53,19 +38,18 @@ let container = document.querySelector('#search-results')
 function renderSearchResults(allPlaylist){
     allPlaylist.forEach(playlist =>{  
     const div = document.createElement(`div`)
-    container.append(div)    
     let p = document.createElement('h2')
+    let span = document.createElement('span')
+    const img =document.createElement('img')
+    container.append(div)  
     p.className = "search-results-text"
     div.append(p)
     div.setAttribute(`class`,`result`)
-    p.textContent = playlist.name
-    const img =document.createElement('img')
+    p.textContent = playlist.name    
     img.className = "search-results-img"
     div.append(img)
-    img.src = playlist.images[0].url
-    let span = document.createElement('span')
+    img.src = playlist.images[0].url    
     span.className = "description"
-    // img.append(span)
     span.textContent = playlist.description
     div.append(span)
     var id= playlist.id
@@ -86,17 +70,3 @@ cubeTitles.forEach(element => {
 });
 
 
-// image of playlist = data.playlists.items[0].images[0].url
-// name of playlist =data.playlists.items[0].name
-// description of playlist = data.playlists.items[0].description
-
-
-// document.addEventListener(`DOMContentLoaded`, (e) => {
-
-// })
-
-
-// searchForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     userSearchInput.value
-// })

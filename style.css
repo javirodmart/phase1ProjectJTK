@@ -2,6 +2,7 @@
 .background {
     background: #1d1d1d;
 }
+
 .title {
     text-align: center;
     float: center;
@@ -15,17 +16,16 @@
     float: center;
     margin: auto;
     font-weight: lighter;
-    height: 50px;
+    height: 55px;
     padding-top: 10px;
     padding-bottom: 15px;
     font-family: 'IBM Plex Mono', monospace;
 }
 .search-bar {
     text-align: center;
-
-    /* margin-top: 90; */
+    border-radius: 15px;
     width: 450px;
-    height: 45px;
+    height: 55px;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 312.5px;
@@ -35,11 +35,7 @@
 .tile {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    /* grid-gap: 1rem; */
-    /* grid-column-gap: 0;
-    grid-row-gap: 0; */
-    text-align: center;
-    /* text-transform: 50% 50% 50%; */
+    text-align: center;    
     line-height: 60px; 
     width: 95%;
 }
@@ -48,15 +44,11 @@
  height: 200px;
  width: 220px;
 background-color: #C12C2C;
-
-/* margin: auto; */
-/* margin-top: 50px; */
 text-align: center;
 box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Masiku', sans-serif;
-/* text-align: center;
-text-transform: 50% 50% 50%; */
+
 
 }
 
@@ -69,8 +61,6 @@ text-transform: 50% 50% 50%; */
 height: 200px;
 width: 220px;
 background-color: #EFF23B;
-/* margin: auto; */
-/* margin-top: 50px; */
 box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Nevermine', sans-serif;
@@ -81,8 +71,6 @@ font-family: 'Nevermine', sans-serif;
 height: 200px;
 width: 220px;
 background-color: #FFAA2C;
-/* margin: auto; */
-/* margin-top: 50px; */
 box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Norda', sans-serif;
@@ -93,8 +81,6 @@ font-family: 'Norda', sans-serif;
 height: 200px;
 width: 220px;
 background-color: #6EBC52;
-/* margin: auto; */
-/* margin-top: 50px; */
 box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Dish Out', sans-serif;
@@ -105,8 +91,6 @@ font-family: 'Dish Out', sans-serif;
 height: 200px;
 width: 220px;
 background-color: #4FB5EE;
-/* margin: auto; */
-/* margin-top: 50px; */
 box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Rubik Glitch', cursive;
@@ -114,9 +98,9 @@ font-weight: lighter
 }
 .cube5 > h2{
     font-family: 'Rubik Glitch', cursive;
-    font-weight: lighter
-;
+    font-weight: lighter;
 }
+
 .cube6{
 height: 200px;
 width: 220px;
@@ -127,11 +111,6 @@ box-shadow: 0px 0px 15px black;
 border-radius: 10px;
 font-family: 'Moody Adolescent', sans-serif;
 }  
-
-
-
-
-
 
 .cube1:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube4:hover, .cube5:hover, .cube6:hover, .cube7:hover, .cube8:hover{
 transform: scale(1.2);
@@ -144,23 +123,10 @@ transition: padding .5s
     align-items: center;
     height: 200px;
     width: 400px;
-    position: right;
-    /* height: 400px; */
-    /* right: 190px; */
-    /* width: 400x; */
-    /* top: 145; */
-    /* bottom: 420px; */
-    /* box-shadow: 0px 0px 15px black; */
-    /* background: #131313; */
-    /* padding: 10px; */
-    /* color: white; */
-    /* border-radius: 10px; */
-    /* transform-origin: 100% 50%; */
-    /* transform: translateX(-100%); */
-    /* transition: 0.2s ease-in-out; */
-    /* outline: 0; */
-    margin-left: 200px;
+    position: fixed;    
+    left: 77%;
 }
+
 button {
     font-size: 100%;
     font-family: inherit;
@@ -233,4 +199,50 @@ button {
     #toggel{
         color: white;
         font-size: 50px;
+    }
+    
+    
+    
+    /* CSS */
+    .button-27 {
+      appearance: none;
+      background-color: #000000;
+      border: 2px solid #1A1A1A;
+      border-radius: 15px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 16px 24px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 10%;
+      will-change: transform;
+      
+    }
+    
+    .button-27:disabled {
+      pointer-events: none;
+    }
+    
+    .button-27:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+    
+    .button-27:active {
+      box-shadow: none;
+      transform: translateY(0);
     }
