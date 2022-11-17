@@ -60,7 +60,7 @@
 .cube2{
     height: 200px;
     width: 220px;
-    background-color: #EFF23B;
+    background-color: #FFAA2C;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
     font-family: 'Nevermine', sans-serif;
@@ -70,7 +70,7 @@
 .cube3{
     height: 200px;
     width: 220px;
-    background-color: #FFAA2C;
+    background-color: #EFF23B;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
     font-family: 'Norda', sans-serif;
@@ -142,7 +142,9 @@ button {
     margin-top: 22px;
     display: grid;
     padding: 0;
-    grid-template-columns: repeat(4, 2fr);  
+    grid-template-columns: repeat(4, 2fr); 
+    background-image: linear-gradient(to bottom right, #1d1d1d, rgb(94, 38, 38));
+     
 }
 
 .container {
@@ -157,7 +159,7 @@ button {
     width:200px;
     height:280px;
     padding-bottom: 10px;
-    margin-top: -50px;
+    margin-top: -10px;
     margin-bottom: -10px;
     
 }
@@ -165,14 +167,16 @@ button {
 .search-results-text {
     size: 20px;
     text-align: center;
-   font-weight: bolder;
+    font-weight: bolder;
 } 
 .description {
     padding-top: 5px;
     text-align: center;
+    
+    
 }
 
-.result{
+.result {
     text-align: center;
     position: relative;
 }
@@ -201,16 +205,13 @@ img{
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
-    margin: 0;
+    margin-top: 20px;
     min-height: 60px;
     min-width: 0;
-    outline: none;
     padding: 16px 24px;
     text-align: center;
-    text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     width: 10%;
     will-change: transform;

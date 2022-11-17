@@ -28,15 +28,17 @@ fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=12&offse
 })
     .then(r => r.json())
     .then(data => {        
-        console.log(data.playlists.items);
-        let allPlaylist = data.playlists.items;
+        // console.log(data.playlists.items);
+        var allPlaylist = data.playlists.items;
         renderSearchResults(allPlaylist)
+        // renderSearchResults(data.playlists.items)
 
     })
 }
 let container = document.querySelector('#search-results')
+
 function renderSearchResults(allPlaylist){
-    allPlaylist.forEach(playlist =>{  
+    allPlaylist.forEach(playlist => {  
     const div = document.createElement(`div`)
     let p = document.createElement('h2')
     let span = document.createElement('span')
@@ -48,9 +50,9 @@ function renderSearchResults(allPlaylist){
     p.textContent = playlist.name    
     img.className = "search-results-img"
     div.append(img)
-    img.src = playlist.images[0].url    
+    img.src = playlist.images[0]?.url ||  "https://i.pinimg.com/originals/6a/6d/11/6a6d1124cf69e5588588bc7e397598f6.png"  
     span.className = "description"
-    span.textContent = playlist.description
+    span.innerHTML = playlist?.description || `songs: ${playlist.tracks.total}`
     div.append(span)
     var id= playlist.id
     img.addEventListener('click', (e) => {
