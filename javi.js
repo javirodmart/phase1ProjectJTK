@@ -34,9 +34,21 @@ function sad(data){
  
 
 function lightDark(){
-    const button = querySelector(`toggel`)
-    button.addEventListener(`toggel`, (e) => {
-        button.textContack =`hey`
+    const button = document.querySelector(`details`)
+    const body = document.querySelector(`body`)
+    button.addEventListener(`toggle`, (e) => {
+       const sum = document.querySelector(`.toggle`) 
+       const title = document.querySelector(`.title`)
+       const intro = document.querySelector(`.intro`)
+      
+        var element = document.body;
+        body.classList.toggle("dark");
+        intro.classList.toggle("dark")
+        title.classList.toggle("dark")
+        sum.classList.toggle("dark")
+    
+      
+      
     })
 }
 
@@ -46,7 +58,7 @@ function lightDark(){
 
 document.addEventListener(`DOMContentLoaded`, (e) => {
    sad()
-  console.log(`hey`)
+  lightDark()
   
   
 })

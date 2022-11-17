@@ -10,6 +10,7 @@
     height: 40px;
     padding-bottom: 0;
     font-family: 'IBM Plex Mono', monospace;
+    color: white;
 }
 .intro {
     text-align: center;
@@ -20,6 +21,7 @@
     padding-top: 10px;
     padding-bottom: 15px;
     font-family: 'IBM Plex Mono', monospace;
+    color: white;
 }
 .search-bar {
     text-align: center;
@@ -38,6 +40,7 @@
     text-align: center;    
     line-height: 60px; 
     width: 95%;
+    
 }
 
 .cube1 {
@@ -144,6 +147,7 @@ button {
     padding: 0;
     grid-template-columns: repeat(4, 2fr); 
     background-image: linear-gradient(to bottom right, #1d1d1d, rgb(94, 38, 38));
+    color: bisque;
      
 }
 
@@ -184,7 +188,7 @@ img{
     margin: auto;
 }
 
-#toggel{
+#toggle{
     color: white;
     font-size: 50px;
 }
@@ -231,3 +235,21 @@ img{
     box-shadow: none;
     transform: translateY(0);
 }
+a:link{
+    color:bisque;
+    text-decoration: none;
+}
+#toggle{
+    content: none;
+    display: block;
+  }
+
+  .dark{
+    background-color: bisque;
+    color: black;
+  }
+#dark-light img
+  {color: white;
+  font-size: 20px;
+  margin: auto;
+  }
