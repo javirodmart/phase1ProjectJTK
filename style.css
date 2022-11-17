@@ -110,11 +110,11 @@
     font-family: 'Moody Adolescent', sans-serif;
 }  
 
-.cube1:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube4:hover, .cube5:hover, .cube6:hover, {
+.cube1:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube4:hover, .cube5:hover, .cube6:hover {
     transform: scale(1.2);
     transition-duration: 1s; 
     transition: 1s ease-in 1s;
-    transition: padding .5s
+    transition: padding .5s; 
 } 
 
 #panel {
