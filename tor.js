@@ -27,12 +27,9 @@ fetch(`https://api.spotify.com/v1/search?q=${id}%20&type=playlist&limit=12&offse
     }
 })
     .then(r => r.json())
-    .then(data => {        
-        // console.log(data.playlists.items);
+    .then(data => {       
         var allPlaylist = data.playlists.items;
         renderSearchResults(allPlaylist)
-        // renderSearchResults(data.playlists.items)
-
     })
 }
 let container = document.querySelector('#search-results')
@@ -62,11 +59,11 @@ function renderSearchResults(allPlaylist){
 })
 }   
 
-const cubeTitles = document.querySelectorAll('.p')
-cubeTitles.forEach(element => {
-    element.addEventListener("mouseover", (e) => {
+const cubeElement = document.querySelectorAll('.p')
+cubeElement.forEach(textCollection => {
+    textCollection.addEventListener("mouseover", (e) => {
     e.target.style.color = "white"});
-    element.addEventListener('mouseout', (e) => {
+    textCollection.addEventListener('mouseout', (e) => {
         e.target.style.color = "black"
     })
 });

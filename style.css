@@ -12,6 +12,7 @@
     font-family: 'IBM Plex Mono', monospace;
     color: white;
 }
+
 .intro {
     text-align: center;
     float: center;
@@ -23,6 +24,7 @@
     font-family: 'IBM Plex Mono', monospace;
     color: white;
 }
+
 .search-bar {
     text-align: center;
     border-radius: 15px;
@@ -39,8 +41,7 @@
     grid-template-columns: 33% 33% 33%;
     text-align: center;    
     line-height: 60px; 
-    width: 95%;
-    
+    width: 95%;    
 }
 
 .cube1 {
@@ -51,8 +52,6 @@
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
     font-family: 'Masiku', sans-serif;
-
-
 }
 
 .cube2 > h2 {
@@ -60,51 +59,49 @@
     margin-top: 18px;
 }
 
-.cube2{
+.cube2 {
     height: 200px;
     width: 220px;
     background-color: #FFAA2C;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
     font-family: 'Nevermine', sans-serif;
-
-
 }
-.cube3{
+
+.cube3 {
     height: 200px;
     width: 220px;
     background-color: #EFF23B;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
-    font-family: 'Norda', sans-serif;
-
-    
+    font-family: 'Norda', sans-serif;    
 }
-.cube4{
+
+.cube4 {
     height: 200px;
     width: 220px;
     background-color: #6EBC52;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
-    font-family: 'Dish Out', sans-serif;
-
-    
+   
+    font-family: 'Dish Out', sans-serif;    
 }
-.cube5{
+.cube5 {
     height: 200px;
     width: 220px;
     background-color: #4FB5EE;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px;
     font-family: 'Rubik Glitch', cursive;
-    font-weight: lighter        
+    font-weight: lighter;        
 }
+
 .cube5 > h2{
     font-family: 'Rubik Glitch', cursive;
     font-weight: lighter;
 }
 
-.cube6{
+.cube6 {
     height: 200px;
     width: 220px;
     background-color: #9737C3;
@@ -173,27 +170,25 @@ button {
     text-align: center;
     font-weight: bolder;
 } 
+
 .description {
     padding-top: 5px;
-    text-align: center;
-    
-    
+    text-align: center;  
 }
 
 .result {
     text-align: center;
     position: relative;
 }
-img{
+
+img {
     margin: auto;
 }
 
-#toggle{
+#toggle {
     color: white;
     font-size: 50px;
 }
-
-
 
 
 .button-27 {
@@ -211,15 +206,12 @@ img{
     line-height: normal;
     margin-top: 20px;
     min-height: 60px;
-    min-width: 0;
     padding: 16px 24px;
     text-align: center;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
     touch-action: manipulation;
     width: 10%;
-    will-change: transform;
-    
+    will-change: transform;    
 }
 
 .button-27:disabled {
@@ -242,14 +234,14 @@ a:link{
 #toggle{
     content: none;
     display: block;
-  }
+}
 
   .dark{
     background-color: bisque;
     color: black;
-  }
+}
 #dark-light img
   {color: white;
   font-size: 20px;
   margin: auto;
-  }
+}
