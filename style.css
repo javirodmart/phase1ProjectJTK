@@ -244,4 +244,6 @@ a:link{
   {color: white;
   font-size: 20px;
   margin: auto;
+} summary{
+    width: fit-content;
 }
